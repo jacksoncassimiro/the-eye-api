@@ -11,7 +11,7 @@ def process(event):
     measure = _extract_measure(event)
     entities = _extract_entities(event)
 
-    return _save(measure, event)
+    return _save(measure, entities)
 
 
 def _save(measure, entities):
@@ -42,6 +42,7 @@ def _extract_measure(event):
     Returns:
         an instance of MEASURES.
     """
+    pass
 
 
 def _extract_entities(event):
@@ -54,3 +55,4 @@ def _extract_entities(event):
     Returns:
         a list of Entity instances.
     """
+    pass
